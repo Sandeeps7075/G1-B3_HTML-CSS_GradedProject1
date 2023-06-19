@@ -1,0 +1,171 @@
+body {
+    height: auto;
+    margin: 0;
+}
+
+header p{
+    background-color: rgb(94, 91, 91);
+    color: white;
+    margin: 0%;
+    padding: 20px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 50px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    padding: 10px;
+}
+
+#Navigate {
+    position: sticky;
+    top: 0%;
+    z-index: 100;
+}
+
+.menu {
+    margin: 0%;
+    background-color: rgb(188, 183, 183);
+}
+
+.menu li {
+    padding: 10px;
+    display: inline-block;
+}
+
+.menu li a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.menu li:hover {
+    background-color: black;
+}
+
+.Dropdown {
+    position: absolute;
+    display: none;
+    width: auto;
+    max-width: 150px;
+    background-color: whitesmoke;
+    padding: 0%;
+
+}
+
+.menu li:hover .Dropdown {
+    margin-top: 10px;
+    display: block;
+    z-index: 100;
+}
+
+.Dropdown li a {
+    color: steelblue;
+    font-size: 16px;
+}
+
+.Dropdown li:hover {
+    background-color: gainsboro;
+}
+
+@keyframes changeImage {
+    0% {
+        background-image: url("Images/Animation/ani1.jpg");
+    }
+
+    25% {
+        background-image: url("Images/Animation/ani2.png");
+    }
+
+    50% {
+        background-image: url("Images/Animation/ani3.jpg");
+    }
+
+    75% {
+        background-image: url("Images/Animation/ani4.jpg");
+    }
+
+    100% {
+        background-image: url("Images/Animation/ani5.jpg");
+    }
+
+
+}
+
+#imageSlider {
+    animation: changeImage 25s linear infinite;
+    background-image: url("Images/Animation/ani1.jpg");
+    background-size: 100% 100%;
+    height: 300px;
+    border: 2px solid steelblue;    
+}
+
+#Sample1 h1,
+#Sample2 h1 {
+    margin-left: 10px;
+}
+
+#productsList {
+    padding: 30px;
+    padding-top: 0%;
+    overflow: auto;
+    white-space: nowrap;
+    overflow-x: visible;
+}
+
+.product {
+    position: relative;
+    display: inline-block;
+    border-radius: 10px;
+    margin-left: 15px;
+    margin-top: 0%;
+    width: 260px;
+    height: 250px;
+    background-color: rgb(243, 249, 253);
+    box-shadow: 3px 3px 5px 2px rgb(188, 183, 183);  
+}
+
+.product h4 {
+    margin-left: 10px;
+}
+
+.product img {
+    border-radius: 10px;
+    width: 240px;
+    height: 80px;
+    padding: 5px;
+
+}
+
+.product p {
+    margin: 10px;
+    color: blue;
+}
+
+.product button {
+    text-align: center;
+    color: goldenrod;
+    background-color: rgb(194, 194, 244);
+    border: 2px solid blueviolet;
+    position: absolute;
+    width: 230px;
+    border-radius: 5px;
+    margin-left: 10px;
+    padding: 5px;
+    font-size: 15px;
+
+}
+
+.product:hover {
+    width: 270px;
+    height: 270px;
+}
+
+.product button:focus {
+    background-color: rgb(250, 234, 230);
+    border-color: rgb(0, 255, 76);
+}
